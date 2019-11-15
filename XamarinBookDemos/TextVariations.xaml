@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinBookDemos.TextVariations">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="0,20,0,0" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label VerticalOptions="CenterAndExpand" Text="Single lines of text are easy!!" />
+                <Label VerticalOptions="CenterAndExpand">
+                    <Label.Text>
+                        Text can also be content of label text property
+                    </Label.Text>
+                </Label>
+                <Label VerticalOptions="CenterAndExpand">
+                    Text is the content property of label
+                </Label>
+             
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

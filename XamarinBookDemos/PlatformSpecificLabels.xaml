@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XamarinBookDemos.PlatformSpecificLabels">
+    <ContentPage.Content>
+        <Label x:Name="deviceLabel" HorizontalOptions="Center"
+               VerticalOptions="Center">
+            <Label.Text>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="This is an iOS device" />
+                    <On Platform="Android" Value="This is Andoid device" />
+                </OnPlatform>
+            </Label.Text>
+        </Label>
+    </ContentPage.Content>
+</ContentPage>

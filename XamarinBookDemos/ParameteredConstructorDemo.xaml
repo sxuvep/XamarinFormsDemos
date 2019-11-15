@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinBookDemos.ParameteredConstructorDemo">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20,40,20,20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <BoxView VerticalOptions="CenterAndExpand"
+                     WidthRequest="100"
+                     HeightRequest="100"
+                     HorizontalOptions="Center">
+                <BoxView.Color>
+                   <Color>
+                       <x:Arguments>
+                         <x:Double>1</x:Double>
+                         <x:Double>0</x:Double>
+                         <x:Double>0</x:Double>
+                       </x:Arguments>
+                   </Color>
+                </BoxView.Color>
+            </BoxView>
+             <BoxView VerticalOptions="CenterAndExpand"
+                     WidthRequest="100"
+                     HeightRequest="100"
+                     HorizontalOptions="Center">
+                <BoxView.Color>
+                   <Color>
+                       <x:Arguments>
+                         <x:Double>1</x:Double>
+                         <x:Double>0</x:Double>
+                         <x:Double>0</x:Double>
+                         <x:Double>0.5</x:Double>
+                       </x:Arguments>
+                   </Color>
+                </BoxView.Color>
+            </BoxView>
+            <BoxView VerticalOptions="CenterAndExpand"
+                     WidthRequest="100"
+                     HeightRequest="100"
+                     HorizontalOptions="Center">
+                <BoxView.Color>
+                   <Color>
+                       <x:Arguments>
+                         <x:Double>0.5</x:Double>
+                       </x:Arguments>
+                   </Color>
+                </BoxView.Color>
+
+            </BoxView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
